@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header p-5">
+        <div class="container">
+            <div class="header-content d-flex justify-content-between align-items-center">
+                <a href="#" class="text-decoration-none text-white d-flex align-items-center">
+                    <img src="./img/logo@2x.png" class="" alt="weather logo">
+                    <div class="logo ms-3">
+                        <h1 class="fs-5 mb-0">weather</h1>
+                        <small>tagline goes here</small>
+                    </div>
+                </a>
+                <ul class="list-unstyled d-flex d-flex justify-content-between w-50">
+                    <li><a href="" class="default border rounded-pill">home</a></li>
+                    <li><a href="" class="link">news</a></li>
+                    <li><a href="" class="link">live cameras</a></li>
+                    <li><a href="" class="link">photos</a></li>
+                    <li><a href="" class="link">contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="hero py-5">
+        <div class="container position-relative">
+            <input type="text" class="form-control rounded-pill" placeholder="Find your location..." id="search">
+            <button id="submit" type="button" class="btn btn-info rounded-pill">Find</button>
+        </div>
+    </section>
+    <section class="weather-table">
+        <div class="container">
+            <div class="row g">
+                <div class="col-md-4">
+                    <div class="today forecast">
+                        <div class="header-forecast d-flex justify-content-between align-items-center" id="today">
+                            <p class="day mb-0" id="todayName">Sunday</p>
+                            <p class="date mb-0">
+                            <span id="todayNumber">7 </span>
+                            <span id="todayMonth">january</span>
+                        </p>
+                        </div>
+                        <div class="forecast-content ps-3" id="current">
+                            <div class="location fs-3 pt-3 ps-2" id="todayLocation">cairo</div>
+                            <div class="degree d-flex align-items-center">
+                                <div class="num fs-1"><span id="todayTemp">19</span><span><sup>o</sup> C</span></div>
+                                <div class="forecast-icon"><img src="./img/113 (1).webp" class="pb-3 ps-4" id="todayConditionImg" alt=""></div>
+                            </div>
+                            <div class="custom text-info fs-5 pb-3" id="todayConditionText">Clear</div>
+                            <div class="pb-5">
+                                <span class="pe-3"><img src="./img/icon-umberella@2x.png" class="" alt=""><span id="humidity">20%</span></span>
+                                <span class="pe-3"><img src="./img/icon-wind@2x.png" alt=""><span id="wind">18km/h</span></span>
+                                <span ><img src="./img/icon-compass@2x.png" alt=""><span id="windDirection">East</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="forecast">
+                        <div class="header-forecast text-center pt-2" id="">
+                            <p class="nextDay">Monday</p>
+                        </div>
+                        <div class="forecast-content ps-3">
+                            <div class="degree d-flex align-items-center flex-column">
+                                <div class="forecast-icon"><img src="./img/113.webp" class="pb-3 ps-4 nextDayImg" alt=""></div>
+                                <div class="num fs-3 fw-lighter"><span class="nextMaxTemp">22.4</span><span><sup>o</sup> C</span></div>
+                                <div class="num fs-5 fw-lighter pb-4 nextMinTemp">14.2<sup>o</sup></div>
+                            </div>
+                            <div class="custom text-info fs-5 pb-5 text-center nextTextCondition">sunny</div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="forecast">
+                        <div class="header-forecast text-center pt-2" id="">
+                            <p class="nextDay">Tuesday</p>
+                        </div>
+                        <div class="forecast-content ps-3">
+                            <div class="degree d-flex align-items-center flex-column">
+                                <div class="forecast-icon"><img src="./img/113.webp" class="pb-3 ps-4 nextDayImg" alt=""></div>
+                                <div class="num fs-3 fw-lighter"><span class="nextMaxTemp">21.2</span><span><sup>o</sup> C</span></div>
+                                <div class="num fs-5 fw-lighter pb-4 nextMinTemp">12.3<sup>o</sup></div>
+                            </div>
+                            <div class="custom text-info fs-5 pb-5 text-center nextTextCondition">sunny</div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="subscribe py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <input type="text" class="form-control rounded-pill" placeholder="enter your email to subscribe.." name="subscribe">
+                </div>
+                <div class="col-md-3 col-md-offset-1"></div>
+            </div>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
